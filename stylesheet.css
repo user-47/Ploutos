@@ -127,6 +127,14 @@ input[value=Email] {
 }
 
 
+#email {
+  border-color: red;
+}
+
+#password {
+  border-color: green;
+}
+
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {

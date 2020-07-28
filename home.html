@@ -12,9 +12,13 @@
     <script src="http://cdn.ckeditor.com/4.6.1/standard/ckeditor.js"></script>
     <!-- Fone Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- Favicon -->
+   <link href="imgs/temp_logo.svg" rel="shortcut icon" />
 
     <!-- Raw CSS for Override -->
 <link href="stylesheet.css" rel="stylesheet">
+
+
   </head>
 
   <body class="homeBody">
@@ -31,9 +35,9 @@
         <div class="list-group d-none d-md-block position-fixed">
           
          <div class="bg-white">
-          <div id="sidePanel">
+          <div id="sidePanel" >
           <a href="#" class="list-group-item active"><i class="fa fa-home" aria-hidden="true"></i> Home </a>
-        </div>
+          </div>
           <a href="#" class="list-group-item "><i class="fa fa-search" aria-hidden="true"></i> Search </a>
           <a href="saved.html" class="list-group-item"><i class="fa fa-heart" aria-hidden="true"></i></span> Saved <span class="badge">20</span></a>
           <a href="#" class="list-group-item"><i class="fa fa-envelope" aria-hidden="true"></i> Messages <span class="badge">5</span></a>
@@ -43,42 +47,44 @@
         </div>
 
                 <div class="text-center">
-        <a href="index.html" class="text-danger" ><i class="fa fa-power-off" aria-hidden="true"></i><b>Logout</b>  </a>
+          <a href="index.html" class="text-danger" ><i class="fa fa-power-off" aria-hidden="true"></i><b>Logout</b>  </a>
                </div>
         </div>
-      
-     
     </div>
 
        <!-- User Timeline -->
 
-        
-
-      <div class="col-md-9">
-    
-          <div class="card bg-light mb-3 border-primary" style="max-width: 35rem;" >
+       
+      <div class="col-md-9" id="mainContainer">
+    <div id="mainCard">
+          <div class="card bg-light mb-3 border-primary" style="max-width: 35rem;" id="cardTest">
             <div class="card-header">
               <a href="#" class="text-decoration-none text-dark"><img src="/imgs/prof_Image.jpg" alt="User Profile Image" width="80px" height="80px" class="rounded-circle img-fluid img-thumbnail"> <b> @User Name </b> </a>
                </div>
             <div class="card-body">
               <h5 class="card-title">CAD For NAIRA</h5>
-              <p class="card-text">I have <b>50CAD</b> for sale, looking to exchange for <b>Naira(NGN)</b> at the rate of <b>290</b> per Dollar.</p>
+              <div id="cardBody">
+               
+            </div>
               <hr>
              <div class="float-right">
-               <a href="#" class=" card-footer text-danger ">
-              <i class="fa fa-heart" aria-hidden="true"></i></a>
-              <a href="#" class=" card-footer text-dark text-decoration-none">
+               <a href="#" class=" card-footer text-danger" id="heartButton">
+              <i class="fa fa-heart-o" aria-hidden="true" id="heartz"></i></a>
+              
+              <a href="#" class=" card-footer text-dark text-decoration-none" id="buySome">
+                
                 <b>BUY  SOME...</b></a>
                 <a href="#" class=" card-footer text-dark text-decoration-none">
                   <b>BUY ALL </b></a>
             </div>
             </div>
           </div>
+        </div>
 
         
        
 
-          <div class="card bg-light mb-3" style="max-width: 35rem;">
+          <!-- <div class="card bg-light mb-3" style="max-width: 35rem;">
             <div class="card-header">
               <a href="#" class="text-decoration-none"><img src="/imgs/prof_Image.jpg" alt="User Profile Image" width="80px" height="80px" class="rounded-circle img-fluid img-thumbnail"> <b> @User Name </b> </a>
                </div>
@@ -87,134 +93,16 @@
               <p class="card-text">I have <b>1000CAD</b> for sale, looking to exchange for <b>Naira(NGN)</b> at the rate of <b>290</b> per Dollar.</p>
               <hr>
              <div class="float-right">
-               <a href="#" class=" card-footer text-danger ">
-              <i class="fa fa-heart-o" aria-hidden="true"></i></a>
+               <a href="" class=" card-footer text-danger" id="heartButton">
+              <i class="fa fa-heart-o" aria-hidden="true" id="heartz"></i></a>
               <a href="#" class=" card-footer text-dark text-decoration-none">
                 <b>BUY  SOME...</b></a>
                 <a href="#" class=" card-footer text-dark text-decoration-none">
                   <b>BUY ALL </b></a>
             </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="card bg-light mb-3" style="max-width: 35rem;">
-            <div class="card-header">
-              <a href="#" class="text-decoration-none"><img src="/imgs/prof_Image.jpg" alt="User Profile Image" width="80px" height="80px" class="rounded-circle img-fluid img-thumbnail"> <b> @User Name </b> </a>
-               </div>
-            <div class="card-body">
-              <h5 class="card-title">CAD For NAIRA</h5>
-              <p class="card-text">I have <b>1000CAD</b> for sale, looking to exchange for <b>Naira(NGN)</b> at the rate of <b>290</b> per Dollar.</p>
-              <hr>
-             <div class="float-right">
-               <a href="#" class=" card-footer text-danger ">
-              <i class="fa fa-heart-o" aria-hidden="true"></i></a>
-              <a href="#" class=" card-footer text-dark text-decoration-none">
-                <b>BUY  SOME...</b></a>
-                <a href="#" class=" card-footer text-dark text-decoration-none">
-                  <b>BUY ALL </b></a>
-            </div>
-            </div>
-          </div>
-
-          <div class="card bg-light mb-3" style="max-width: 35rem;">
-            <div class="card-header">
-              <a href="#" class="text-decoration-none"><img src="/imgs/prof_Image.jpg" alt="User Profile Image" width="80px" height="80px" class="rounded-circle img-fluid img-thumbnail"> <b> @User Name </b> </a>
-               </div>
-            <div class="card-body">
-              <h5 class="card-title">CAD For NAIRA</h5>
-              <p class="card-text">I have <b>1000CAD</b> for sale, looking to exchange for <b>Naira(NGN)</b> at the rate of <b>290</b> per Dollar.</p>
-              <hr>
-             <div class="float-right">
-               <a href="#" class=" card-footer text-danger ">
-              <i class="fa fa-heart-o" aria-hidden="true"></i></a>
-              <a href="#" class=" card-footer text-dark text-decoration-none">
-                <b>BUY  SOME...</b></a>
-                <a href="#" class=" card-footer text-dark text-decoration-none">
-                  <b>BUY ALL </b></a>
-            </div>
-            </div>
-          </div>
-
-          <div class="card bg-light mb-3" style="max-width: 35rem;">
-            <div class="card-header">
-              <a href="#" class="text-decoration-none"><img src="/imgs/prof_Image.jpg" alt="User Profile Image" width="80px" height="80px" class="rounded-circle img-fluid img-thumbnail"> <b> @User Name </b> </a>
-               </div>
-            <div class="card-body">
-              <h5 class="card-title">CAD For NAIRA</h5>
-              <p class="card-text">I have <b>1000CAD</b> for sale, looking to exchange for <b>Naira(NGN)</b> at the rate of <b>290</b> per Dollar.</p>
-              <hr>
-             <div class="float-right">
-               <a href="#" class=" card-footer text-danger ">
-              <i class="fa fa-heart" aria-hidden="true"></i></a>
-              <a href="#" class=" card-footer text-dark text-decoration-none">
-                <b>BUY  SOME...</b></a>
-                <a href="#" class=" card-footer text-dark text-decoration-none">
-                  <b>BUY ALL </b></a>
-            </div>
-            </div>
-          </div>
-
-
-          <div class="card bg-light mb-3" style="max-width: 35rem;">
-            <div class="card-header">
-              <a href="#" class="text-decoration-none"><img src="/imgs/prof_Image.jpg" alt="User Profile Image" width="80px" height="80px" class="rounded-circle img-fluid img-thumbnail"> <b> @User Name </b> </a>
-               </div>
-            <div class="card-body">
-              <h5 class="card-title">CAD For NAIRA</h5>
-              <p class="card-text">I have <b>1000CAD</b> for sale, looking to exchange for <b>Naira(NGN)</b> at the rate of <b>290</b> per Dollar.</p>
-              <hr>
-             <div class="float-right">
-               <a href="#" class=" card-footer text-danger ">
-              <i class="fa fa-heart-o" aria-hidden="true"></i></a>
-              <a href="#" class=" card-footer text-dark text-decoration-none">
-                <b>BUY  SOME...</b></a>
-                <a href="#" class=" card-footer text-dark text-decoration-none">
-                  <b>BUY ALL </b></a>
-            </div>
-            </div>
-          </div>
-
-          <div class="card bg-light mb-3" style="max-width: 35rem;">
-            <div class="card-header">
-              <a href="#" class="text-decoration-none"><img src="/imgs/prof_Image.jpg" alt="User Profile Image" width="80px" height="80px" class="rounded-circle img-fluid img-thumbnail"> <b> @User Name </b> </a>
-               </div>
-            <div class="card-body">
-              <h5 class="card-title">CAD For NAIRA</h5>
-              <p class="card-text">I have <b>1000CAD</b> for sale, looking to exchange for <b>Naira(NGN)</b> at the rate of <b>290</b> per Dollar.</p>
-              <hr>
-             <div class="float-right">
-               <a href="#" class=" card-footer text-danger ">
-              <i class="fa fa-heart-o" aria-hidden="true"></i></a>
-              <a href="#" class=" card-footer text-dark text-decoration-none">
-                <b>BUY  SOME...</b></a>
-                <a href="#" class=" card-footer text-dark text-decoration-none">
-                  <b>BUY ALL </b></a>
-            </div>
-            </div>
-          </div>
-
-          <div class="card bg-light mb-3" style="max-width: 35rem;">
-            <div class="card-header">
-              <a href="#" class="text-decoration-none"><img src="/imgs/prof_Image.jpg" alt="User Profile Image" width="80px" height="80px" class="rounded-circle img-fluid img-thumbnail"> <b> @User Name </b> </a>
-               </div>
-            <div class="card-body">
-              <h5 class="card-title">CAD For NAIRA</h5>
-              <p class="card-text">I have <b>1000CAD</b> for sale, looking to exchange for <b>Naira(NGN)</b> at the rate of <b>290</b> per Dollar.</p>
-              <hr>
-             <div class="float-right">
-               <a href="#" class=" card-footer text-danger ">
-              <i class="fa fa-heart-o" aria-hidden="true"></i></a>
-              <a href="#" class=" card-footer text-dark text-decoration-none">
-                <b>BUY  SOME...</b></a>
-                <a href="#" class=" card-footer text-dark text-decoration-none">
-                  <b>BUY ALL </b></a>
-            </div> 
-            </div>     
-            <!-- <div id="newPost"> 
-              <button type="button" class="btn btn-danger btn-lg"> <i class="fa fa-plu"></i>New </i> </button>
-            </div> -->
-
-          </div>
         </div>
       </div>
   </div>
@@ -280,7 +168,7 @@
 
 
 
-  <!-- Add Page -->
+  <!-- create New POST Modal -->
   <div class="modal fade" id="newPost" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -292,33 +180,26 @@
         </div>
         <div class="modal-body">
           <div class="form-group">
-            <label>I Have</label> <input type="number" placeholder="100" class="form-group w-25">
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Dollars 
-                
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a type="button" data-toggle="modal" data-target="#addPage" > Dollar (CAD)</a></li>
-                <li><a type="button" data-toggle="modal" data-target="#addPage" > Naira (NGN)</a></li>
-              </ul>
-           
+            <label>I Have</label> <input type="number" 
+           placeholder="Enter Amount" class="form-group w-25" id="DollarValue">
+           <select id="have" name="iHave">
+            <option id="1">Dollars</option>
+            <option id="2">Naira</option>
+            </select>
               <br>
             <label> I Need</label> 
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-              Naira
-            
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-              <li><a type="button" data-toggle="modal" data-target="#addPage" > Dollar (CAD)</a></li>
-              <li><a type="button" data-toggle="modal" data-target="#addPage" > Naira (NGN)</a></li>
-            </ul>
+            <select id="need" name="iNeed">
+              <option>Naira</option>
+              <option>Dollars</option>
+              </select>
+           
             <hr>
             
-            <label >Rate: </label> <input type="number" placeholder="280" class="form-group w-25">
+            <label >Rate: </label> <input type="number" placeholder="Enter your Rate" class="form-group w-25" id="xRate">
           </div>
           <div class="modal-footer">
             
-            <button type="submit" class="btn btn-success">Post</button>
+            <button type="submit" class="btn btn-success" id="postBtn" data-dismiss="modal">Post</button>
           </div>
 
         
@@ -344,4 +225,9 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
+
+
+  <!-- Script  -->
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 </html>
